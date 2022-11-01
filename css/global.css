@@ -595,6 +595,15 @@
     overflow: hidden;
   }
 
+  .card img{
+    max-width: 400;
+    max-height: 240;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
   .card .category{
     color: blanchedalmond;
   }
@@ -639,10 +648,33 @@
     background: #000;
   }
 
-  .civic .grid{
-    text-align: center;
-    justify-content: center;
-    
+  .civic .fresque{
+    margin-top: 16px;
+  }
+
+  .civic .suli_img{
+    margin-top: 11px;
+  }
+
+  .civic .grid__item .h3{
+    text-transform: uppercase;
+  }
+
+  .civic .grid__item .suli__text{
+    margin-top: 130px;
+  }
+
+  .civic .link__style{
+    margin-top: 90px;
+  }
+
+  .civic a{
+    color: cornflowerblue;
+  }
+
+  .civic a:hover{
+    color: crimson;
+    transition: all 0.2s;
   }
   
   .form {
