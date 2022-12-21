@@ -1,10 +1,3 @@
-let div = document.createElement('div');
-div.classList.add('top');
-div.innerHTML = `<span>Top zone</span>`;
-// console.log(header.nextElementSibling);
-
-// fin de la théorie 
-
 /* Menu mobile */
 
 function menuMobile() {
