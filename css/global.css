@@ -147,6 +147,10 @@
     top: 0;
     z-index: 1;
   }
+
+  .header i{
+    color: whitesmoke;
+  }
   
   .header .logo {
     color: var(--color-body);
@@ -183,7 +187,7 @@
   }
   
   .header a:hover {
-    color: crimson;
+    color: darksalmon;
     transition: all 0.4s;
   }
   
@@ -698,6 +702,10 @@
     background: #000;
   }
 
+  .ideation{
+    background: #000;
+  }
+
   .suli a{
     color: cornflowerblue;
   }
@@ -731,6 +739,25 @@
 
   .suli .grid__item .h3{
     text-transform: uppercase;
+  }
+
+  .ideation p{
+    text-indent: 20px;
+    padding-left: 5rem;
+  }
+
+  .king_kong p{
+    text-indent: 20px;
+    padding-left: 5rem;
+  }
+
+  .entrepreneuriat p{
+    text-indent: 20px;
+  }
+
+  .jap_video .container{
+    display: flex;
+    justify-content: center;
   }
 
   @media screen and (max-width:249px) {
@@ -835,7 +862,7 @@
   }
   
   footer .socials a:hover {
-    background: crimson;
+    background: darksalmon;
   }
   
   @media screen and (min-width:750px) {
