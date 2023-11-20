@@ -42,14 +42,6 @@ function tabsFilters() {
       }
 
       console.log('tutu');
-      // ne sera pas pris en compte !
-      /*if (filter !== elem) {
-        projet.parentNode.classList.add('hide');
-      } else {
-        projet.parentNode.classList.remove('hide');
-      }*/
-
-      // option pour les plus motivés - opérateur ternaire
       filter !== elem ? projet.parentNode.classList.add('hide') : projet.parentNode.classList.remove('hide');
 
     });
@@ -143,3 +135,34 @@ const observerIntersectionAnimation = () => {
 }
 
 observerIntersectionAnimation();
+
+
+// Diapo d'images
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].style.transform = "translateX(100%)";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.transform = "translateX(0)";
+}
