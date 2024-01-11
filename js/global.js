@@ -147,18 +147,24 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-    let i;
     const slides = document.getElementsByClassName("mySlides");
 
-    if (n > slides.length) {
+    if (slides.length === 0) {
+        // No slides found, handle this case accordingly
+        return;
+    }
+
+    slideIndex += n;
+
+    if (slideIndex > slides.length) {
         slideIndex = 1;
     }
 
-    if (n < 1) {
+    if (slideIndex < 1) {
         slideIndex = slides.length;
     }
 
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
         slides[i].style.transform = "translateX(100%)";
     }
